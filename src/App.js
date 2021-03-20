@@ -26,7 +26,7 @@ export default function App() {
     setGridLayout(newArr);
     setUser("22");
     setFood({
-      food1: randomBoolean(parseInt(width - 1)),
+      food1: randomBoolean(parseInt(width)),
       food2: `11`,
       food3: `${width}${width}`,
     });
@@ -46,7 +46,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (!food.food1 && !food.food2 && !food.food3) {
+    if (!food.food1 && !food.food2 && !food.food3 && user) {
       alert("Game Over ^_^");
     }
   }, [food.food1, food.food2, food.food3]);
