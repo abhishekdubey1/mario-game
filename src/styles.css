@@ -1,0 +1,19 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid black;
+  height: 95vh;
+  width: 95vw;
+}
+
+.grid-item {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+}
+.grid-item > img {
+  width: 30px;
+}
+.App:focus {
+  border: 1px solid pink;
+}
