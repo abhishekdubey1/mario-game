@@ -22,7 +22,7 @@ export default function App() {
   }, [food.food1, food.food2, food.food3, user]);
 
   useEffect(() => {
-    let newArr = createArray(width);
+    let newArr = width > 9 ? createArray(9) : createArray(width);
     setGridLayout(newArr);
     setUser("22");
     setFood({
